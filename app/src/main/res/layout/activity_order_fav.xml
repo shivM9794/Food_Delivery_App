@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".McDonaldsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+                <ImageView
+                    android:id="@+id/order_fav1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:id="@+id/mcd_welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:padding="10dp"
+                    android:text="Paradise Bakery"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="5dp"/>
+
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_alignParentStart="true"-->
+                <!--                    android:layout_alignParentBottom="true"-->
+                <!--                    android:layout_marginStart="336dp"-->
+                <!--                    android:layout_marginLeft="302dp"-->
+                <!--                    android:layout_marginBottom="16dp"-->
+                <!--                    android:layout_toRightOf="@+id/back_pressed2"-->
+                <!--                    android:src="@drawable/cart" />-->
+
+            </RelativeLayout>
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/mcd_welcome"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:fontFamily="@font/adamina"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:text="@string/welcome_to_mcdonalds"-->
+            <!--                android:textAllCaps="true"-->
+            <!--                android:textSize="17sp"-->
+            <!--                android:textStyle="bold" />-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/pbm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo"
+                        android:text="Black Forest Cake"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        android:id="@+id/black_forest_cake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="74dp"
+                        android:text="(Made with dark chocolate)"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="43dp"
+                        android:text="Rs 200/-"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/rate1"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="12dp"
+                        android:rating="3.5" />
+
+                    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="154dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_toRightOf="@+id/rate1"
+                        app:finalNumber="100"
+                        tools:ignore="MissingClass" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/burger"
+                    android:layout_width="120dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/black_forest_cake" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo"
+                        android:text="Pineapple Cake"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/pineapple_cake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="74dp"
+                        android:text="(Topped with fresh pineapple)"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="43dp"
+                        android:text="Rs 190/-"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/rate2"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="12dp"
+                        android:rating="4.5" />
+
+                    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="154dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_toRightOf="@+id/rate2"
+                        app:finalNumber="100" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/pineapple_cake" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo"
+                        android:text="Red Velvet Cake"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/red_velvet_cake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="74dp"
+                        android:text="(Made with spl rose patals)"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="43dp"
+                        android:text="Rs 200/-"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/rate3"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="12dp"
+                        android:rating="3.5" />
+
+                    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="154dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_toRightOf="@+id/rate3"
+                        app:finalNumber="100" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/red_velvet_cake" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo"
+                        android:text="Spl Cupcakes"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/cupcake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="74dp"
+                        android:text="(Paradise spl)"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="43dp"
+                        android:text="Rs 90/-"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/rate4"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="12dp"
+                        android:rating="3.5" />
+
+                    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="154dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_toRightOf="@+id/rate4"
+                        app:finalNumber="100" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/cup_cake" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo"
+                        android:text="Strawberry Cake"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/straweberry_cake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="74dp"
+                        android:text="(Made with strawberry)"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="43dp"
+                        android:text="Rs 300/-"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/rate5"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="12dp"
+                        android:rating="3.5" />
+
+                    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="154dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_toRightOf="@+id/rate5"
+                        app:finalNumber="100" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/strawberry_cake" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo"
+                        android:text="Cream Rolls"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/creamrolls"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="74dp"
+                        android:text="(Thin crust and filled with\nfresh cream)"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="43dp"
+                        android:text="Rs 280/-"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/rate6"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="12dp"
+                        android:rating="5"
+                        />
+
+                    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="154dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_toRightOf="@+id/rate6"
+                        app:finalNumber="100" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/cream_rolls" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD TO CART"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/background_button"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>

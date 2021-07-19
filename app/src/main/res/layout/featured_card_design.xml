@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    android:layout_margin="10dp"
+    android:background="#E8F5E9">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+<!--        android:padding="15dp"-->
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/featured_image"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/macd"
+            android:layout_gravity="center_horizontal"/>
+            android:screenReaderFocusable="true"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/featured_title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="McDonald's"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:textSize="16sp"-->
+<!--            -->
+<!--            android:textColor="@color/black"-->
+<!--            android:fontFamily="cursive" />-->
+
+<!--        <RatingBar-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:rating="3.5"-->
+<!--            android:layout_gravity="center"-->
+<!--            style="@style/Widget.AppCompat.RatingBar.Small"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/featured_desc"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="I am Loving It"-->
+<!--            android:textSize="14sp"-->
+<!--            android:layout_gravity="center_horizontal"/>-->
+
+        
+    </androidx.cardview.widget.CardView>
+

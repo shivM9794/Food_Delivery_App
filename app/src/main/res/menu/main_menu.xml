@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="HOME"
+            android:icon="@drawable/home_logo"/>
+
+
+
+        <item
+            android:id="@+id/nav_all_categories"
+            android:title="ALL CATEGORIES"
+            
+            android:icon="@drawable/all_categories_logo"/>
+
+    </group>
+
+<!--    <item android:title="Profile">-->
+<!--        <menu>-->
+<!--            <group-->
+<!--                android:checkableBehavior="single">-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_login"-->
+<!--                    android:title="LOGIN"-->
+<!--                    android:icon="@drawable/login_logo"/>-->
+
+
+
+
+
+<!--            </group>-->
+<!--        </menu>-->
+
+
+<!--    </item>-->
+
+    <item android:title="Categories">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_restaurants"
+                    android:title="RESTAURANTS"
+                    android:icon="@drawable/restrautants_logo"/>
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_hotels"-->
+<!--                    android:title="HOTELS"-->
+<!--                    android:icon="@drawable/hotel_logo"/>-->
+
+                <item
+                    android:id="@+id/nav_payment"
+                    android:title="PAYMENTS"
+                    android:icon="@drawable/payment_logo"/>
+
+            </group>
+        </menu>
+
+
+    </item>
+
+    <item android:title="Share">
+        <menu>
+            <group
+                android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="SHARE"
+                    android:icon="@drawable/share_logo"/>
+
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:title="RATE US"
+                    android:icon="@drawable/rate_us_logo"/>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="LOGOUT"
+                    android:icon="@drawable/logout_logo"/>
+
+
+            </group>
+        </menu>
+
+
+    </item>
+
+    <item android:title="About">
+        <menu>
+            <group
+                android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_about_us"
+                    android:title="About Us"
+                    android:icon="@drawable/about_us"/>
+
+                <item
+                    android:id="@+id/nav_terms_and_condition"
+                    android:title="Terms and Condition"
+                    android:icon="@drawable/negotiation"/>
+
+
+
+            </group>
+        </menu>
+
+
+    </item>
+
+</menu>

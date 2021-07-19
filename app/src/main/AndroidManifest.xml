@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fooddeliveryapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        tools:replace="android:theme">
+        <activity android:name=".PizzaDashboardActivity"></activity>
+        <activity android:name=".OrderFavCartActivity" />
+        <activity android:name=".OrderFavActivity" />
+        <activity android:name=".ShareActivity" />
+        <activity android:name=".MostVisitedCartActivity" />
+        <activity android:name=".PopularCurationCartActivity" />
+        <activity android:name=".PopularCurationActivity" />
+        <activity android:name=".CartAllResNearby" />
+        <activity android:name=".AllResNearbyActivity" />
+        <activity android:name=".About_UsActivity" />
+        <activity android:name=".TandCActivity" />
+        <activity android:name=".TermsAndConditionActivity" />
+        <activity android:name=".FbLoginactivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".TrackingActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".SubwayActivity" />
+        <activity android:name=".McDonaldsActivity" />
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".FastFood" />
+        <activity android:name=".AllCategories" />
+        <activity android:name=".Restaurants" />
+        <activity android:name=".DashBoardActivity" />
+        <activity android:name=".IntroductoryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDYIO4wyBFWbd5NAtTmK0JVVrsr5cHD2Ug" />
+        <meta-data
+            android:name="com.truecaller.android.sdk.PartnerKey"
+            android:value="@string/partnerKey" />
+    </application>
+
+</manifest>
