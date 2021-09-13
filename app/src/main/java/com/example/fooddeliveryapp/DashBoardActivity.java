@@ -357,6 +357,8 @@ public class DashBoardActivity extends AppCompatActivity implements NavigationVi
         featuredRecycler.setAdapter(adapter);
     }
 
+//    ghfdhgkgj
+
 
 
 

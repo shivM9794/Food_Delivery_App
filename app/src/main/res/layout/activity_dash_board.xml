@@ -10,15 +10,15 @@
     tools:context=".DashBoardActivity"
     tools:openDrawer="start">
 
-<!--    <com.google.android.material.navigation.NavigationView-->
-<!--        android:id="@+id/navigation_view"-->
-<!--        android:layout_width="250dp"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_gravity="start"-->
-<!--        android:background="#F5F5F5"-->
-<!--        android:theme="@style/navigationTheme"-->
-<!--        app:headerLayout="@layout/menu_header"-->
-<!--        app:menu="@menu/main_menu" />-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#F5F5F5"
+        android:theme="@style/navigationTheme"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu" />
 
 
     <LinearLayout
